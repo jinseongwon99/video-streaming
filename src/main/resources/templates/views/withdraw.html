@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/e3e7530894.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" th:href="@{/css/withdraw.css}">
+  <link th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}"
+        rel="stylesheet">
+  <script src="/js/withdraw.js" defer></script>
+</head>
+
+<body>
+<!-- header -->
+<div th:insert="~{../common/header :: headerFragment}"></div>
+<!-- // header -->
+
+<div class="main">
+  <div class="all">
+
+    <div class="withdraw-container">
+      <h1 class="h1-title">회원 탈퇴</h1>
+      <form action="#" th:action="@{/withdraw}" method="post">
+        <div class="form-group">
+          <label for="password">비밀번호 확인</label>
+          <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요">
+        </div>
+        <div class="form-group">
+          <label for="reason">탈퇴 사유 (선택)</label>
+          <textarea id="reason" name="reason" rows="4" placeholder="탈퇴 사유를 입력하세요"></textarea>
+        </div>
+        <button type="submit">탈퇴하기</button>
+      </form>
+      <p><a th:href="@{/myPage}" class="cancel-link">취소</a></p>
+      <div class="confirmation-message" th:if="${successMessage != null}">
+        <h2>탈퇴가 완료되었습니다.</h2>
+        <p th:text="${successMessage}"></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

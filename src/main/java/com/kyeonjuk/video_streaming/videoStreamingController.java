@@ -50,4 +50,14 @@ public class videoStreamingController {
     public String updateProfile() {
         return "updateProfile";
     }
+
+    @GetMapping("/updateChannelProfile")
+    public String updateChannelProfile() {
+        return "updateChannelProfile";
+    }
+
+    @GetMapping("/withdraw")
+    public String withdraw() {
+        return "withdraw";
+    }
 }
