@@ -65,3 +65,20 @@
 **[내 정보 수정 페이지]**
 ![localhost_8080_updateProfile](https://github.com/user-attachments/assets/720c7bde-da2d-4299-984d-36b7cbb21c85)
 
+<br>
+<br>
+
+**[내 채널 프로필 정보 수정 페이지]**
+![localhost_8080_updateChannelProfile](https://github.com/user-attachments/assets/b622bb79-c655-4b76-a947-55c8901c5ba0)
+
+<br>
+<br>
+
+**[탈퇴 페이지]**
+![localhost_8080_withdraw](https://github.com/user-attachments/assets/1e5dc58d-bc2c-4dd1-9c63-cf0e3203c1da)
+
+
+
+
+
+
