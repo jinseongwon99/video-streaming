@@ -16,8 +16,10 @@ navbarBtn.addEventListener('click', () => {
     });
     // 구독 폰트 변경
     subscribeFont.style.fontSize = (sideContainer.style.width === "185px") ? "1vw" : "0.6vw";
-    // .main 사이즈 변경
+    // .main marginLeft 사이즈 변경
     mainSize.style.marginLeft = (sideContainer.style.width === "185px") ? "224px" : "70px";
+    // .main width 사이즈 변경
+    mainSize.style.width = (sideContainer.style.width === "185px") ? "90vw" : "102vw";
 });
 
 // 우측 네비바, 로고 클릭시 페이지 이동

@@ -1,5 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .header-navbar {
   display: flex;
